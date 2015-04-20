@@ -14,7 +14,7 @@
 <?php 
         } //fin si
 ?>
-           <li id="<?php echo $uneOffre['id'] ?>"><a href ="#pageoffre" ><?php echo $uneOffre['date']." à ".$uneOffre['heure']?> </a> 
+           <li id="<?php echo $uneOffre['id'] ?>"><a href ="#pageoffre" ><?php echo $uneOffre['date']." à ".$uneOffre['heure']." pour ".$uneOffre['retour']?> </a> 
 <?php 
     } //fin foreach
 ?>
