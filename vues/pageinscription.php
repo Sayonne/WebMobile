@@ -24,22 +24,23 @@ include "vues/logo.html";
     <div data-role="fieldcontain">
                 <label for="service">Indiquer votre service</label>
         <fieldset data-role="controlgroup" data-type="horizontal">
-                <input type="radio" name="recherche" id="recherche" value="on" checked="checked">
+                <input type="radio" name="radio-choice-h-2" id="recherche" value="1" checked="checked">
                 <label for="recherche">Recherche</label>
-                <input type="radio" name="production" id="production" value="off">
+                <input type="radio" name="radio-choice-h-2" id="production" value="2">
                 <label for="production">Production</label>
-                <input type="radio" name="commercial" id="commercial" value="other">
+                <input type="radio" name="radio-choice-h-2" id="commercial" value="3">
                 <label for="commercial">Commercial</label>
-                <input type="radio" name="securite" id="securite" value="other">
+                <input type="radio" name="radio-choice-h-2" id="securite" value="4">
                 <label for="securite">Sécurité</label>
         </fieldset>
     </div>
+    <p>
+        <button type="submit"  data-role="button" id="btninscription">Envoyer</button>
+    </p>
 </form>
-        <p>
-            <a href="#"  data-role="button" id="btninscription" >Envoyer</a>
-         </p>
-    </div><!-- /content -->
-    
+    <div id ="divinscription"></div>
+       
+</div><!-- /content -->  
 <?php    
 include "vues/pied.html";
 ?>

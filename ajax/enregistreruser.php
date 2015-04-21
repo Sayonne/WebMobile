@@ -46,7 +46,7 @@ function genererMDP ($longueur = 4){
 	// retourner le résultat final
 	return $mdp;
 }
-
+$mdp = genererMDP();
 
 echo " login : ".$login."<br>Mot de passe : ".$mdp."<br>Merci de votre visite et à bientôt";
 ?>
