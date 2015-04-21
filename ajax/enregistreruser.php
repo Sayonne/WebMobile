@@ -8,7 +8,7 @@ $tel = $_REQUEST['tel'];
 // générer le nom de user : à faire
 // générer le mdp travail à faire
 
-$login = $nom.".".$prenom rand(1, 100);
+$login = substr($prenom, 0, 1).$nom;
 //	Générer un mot de passe aléatoire
 // ---------------------------------------------------------------------
 function genererMDP ($longueur = 4){
@@ -17,7 +17,7 @@ function genererMDP ($longueur = 4){
  
 	// Définir tout les caractères possibles dans le mot de passe, 
 	// Il est possible de rajouter des voyelles ou bien des caractères spéciaux
-	$possible = "2346789bcdfghjkmnpqrtvwxyzBCDFGHJKLMNPQRTVWXYZ";
+	$possible = "012346789abcdfghjkmnpqrtvwxyzABCDFGHJKLMNPQRTVWXYZ";
  
 	// obtenir le nombre de caractères dans la chaîne précédente
 	// cette valeur sera utilisé plus tard
